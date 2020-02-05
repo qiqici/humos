@@ -1,0 +1,16 @@
+{
+  "name": "mos-ops-web-ivi-diganostic",
+  "script": "./server/app.js",
+  "instances": 1,
+  "max_memory_restart": "1024M",
+  "error_file": "/var/log/app/mos-ops-web-ivi-diganostic/error.log",
+  "out_file": "/var/log/app/mos-ops-web-ivi-diganostic/out.log",
+  "combine_logs": true,
+  "env_config": {
+    "PORT": "80",
+    "DASHBOARD_SERVICE": "",
+    "ORDERSERVER": "",
+    "PARKING_SERVER":"",
+    "VEHICLE_SERVER":""
+  }
+}
